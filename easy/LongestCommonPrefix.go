@@ -1,3 +1,5 @@
+package easy
+
 func longestCommonPrefix(strs []string) string {
 	minLen := len(strs[0])
 	for _, str := range strs {

@@ -1,3 +1,7 @@
+package easy
+
+import "strconv"
+
 func isPalindromeNaive(x int) bool {
 	if x < 0 {
 		return false

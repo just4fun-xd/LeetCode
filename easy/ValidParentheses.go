@@ -1,3 +1,5 @@
+package easy
+
 func isValid(s string) bool {
 	stack := []rune{}
 	pairs := map[rune]rune{')': '(', ']': '[', '}': '{'}
