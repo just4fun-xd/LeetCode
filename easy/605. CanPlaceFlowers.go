@@ -1,16 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	nums := []int{1, 0, 0, 0, 1}
-	n := 1
-
-	fmt.Println(canPlaceFlowers(nums, n))
-
-}
+package easy
 
 func canPlaceFlowers(flowerbed []int, n int) bool {
 	i := 0
