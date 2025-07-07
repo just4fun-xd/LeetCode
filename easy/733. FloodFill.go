@@ -16,7 +16,9 @@ func floodFill(image [][]int, sr, sc, newColor int) [][]int {
 			image[x][y] = newColor
 			neighbors := findNeighbors(x, y, image)
 			for _, neighbor := range neighbors {
-				queue = append(queue, neighbor)
+				if image[neighbor[0]][neighbor[1]] == originalColor {
+					queue = append(queue, neighbor)
+				}
 			}
 
 		}
